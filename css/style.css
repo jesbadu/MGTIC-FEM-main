@@ -1,0 +1,95 @@
+ /* Asegura que el cuerpo y el html ocupen toda la altura de la ventana */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+
+/* Se asegura de que el contenido principal ocupe el espacio restante */
+.container {
+    flex: 1;
+    min-height: 400px;
+}
+
+/* Se asegura de que el contenido principal ocupe el espacio restante */
+.container-home {
+    flex: 1;
+}
+
+ /* Aumentar altura del header y asegurar que la imagen se vea más grande */
+ .header-image {
+    background-image: url('../img/header2.jpg');
+    background-size: cover; /* Asegura que la imagen cubra todo el área del header */
+    background-position: center;
+    height: 650px !important;  /* Se ajusta a la altura completa de la ventana */
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; /* Alinea el contenido al inicio (arriba) */
+    padding-left: 20px;
+    padding-top: 150px;
+    text-align: left;
+    width: 100%;
+}
+
+.header-image h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+ /* Aumentar altura del header y asegurar que la imagen se vea más grande */
+ .header-mini-image {
+    background-image: url('../img/header3.jpg');
+    background-size: cover; /* Asegura que la imagen cubra todo el área del header */
+    background-position: center;
+    height: 350px !important;  /* Se ajusta a la altura completa de la ventana */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Alinea el contenido al inicio (arriba) */
+    text-align: left;
+    width: 100%;
+}
+
+.header-mini-image h1 {
+    color: #0071ef;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Se asegura de que el contenedor de #alumnos use Flexbox */
+#alumnos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo para el formulario */
+#alumnos .form-container {
+    flex: 1;
+    padding-right: 20px; /* Espacio entre el formulario y la imagen */
+}
+
+/* Estilo para la imagen */
+#alumnos .image-container {
+    flex: 1;
+    text-align: center; /* Centra la imagen dentro del contenedor */
+}
+
+/* Estilo para la imagen (ajustar al tamaño deseado) */
+#alumnos .image-container img {
+    width: 100%; /* Ajusta la imagen al 100% del contenedor */
+    height: auto;
+    max-width: 400px; /* Limita el ancho máximo de la imagen */
+}
+
+
+/* Footer */
+footer {
+    background: url(../img/bg1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 70px;
+}

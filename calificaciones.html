@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Prototipo de Evaluación de Competencias en Simulación Clínica</title>
+    <!-- Enlace a Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>    
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fw-bold">
+        <div class="container-fluid d-flex justify-content-center align-items-center">
+            <a class="navbar-brand" href="#">Prototipo de Evaluación</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-center text-white" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="alumno.html">Alumno</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="docentes.html">Docente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="practicas.html">Prácticas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="calificaciones.html">Consultar Calificaciones</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- Header con imagen -->
+<header class="header-mini-image text-black">
+    <h1>Consulta de Calificaciones</h1>
+</header>
+
+    <!-- Instrucciones de uso -->
+    <div class="container">
+        
+        <div id="alumnos" class="container py-5">
+            <div class="row d-flex align-items-center">
+                
+                <!-- Contenedor de Imagen -->
+                <div class="col-md-4 text-center">
+                    <img src="img/practica.jpg" alt="Imagen de referencia" class="img-fluid rounded shadow-lg">
+                </div>
+        
+                <!-- Contenedor del Formulario -->
+                <div class="col-md-7 mt-4">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-header bg-primary text-white text-center fw-bold">
+                            Consulta de Alumno
+                        </div>
+                        <div class="card-body">
+                            <form class="needs-validation" novalidate>
+                                <fieldset>
+                                    <div class="row">
+                                        <!-- Matrícula del Alumno -->
+                                        <div class="mb-3 col-md-6 mx-auto">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="matriculaAlumno" name="matriculaAlumno"
+                                                       placeholder="Ingrese la matrícula" required>
+                                                <label for="matriculaAlumno">Matrícula del Alumno</label>
+                                                <div class="invalid-feedback">
+                                                    Por favor, ingrese una matrícula válida.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <!-- Botón de Registro -->
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-primary px-4">Consultar</button>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                        
+
+            </div>
+        </div>        
+        
+    </div>
+
+    <div class="pt-5"></div>
+
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-black fw-bold py-4">
+        <p>© 2025 Prototipo Evaluación Clínica</p>
+    </footer>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
