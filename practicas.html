@@ -8,91 +8,128 @@
     <!-- Enlace a Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>    
+<body>
 
-    <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fw-bold">
-        <div class="container-fluid d-flex justify-content-center align-items-center">
-            <a class="navbar-brand" href="#">Prototipo de Evaluación</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse d-flex justify-content-center text-white" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="alumno.html">Alumno</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="docentes.html">Docente</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="practicas.html">Prácticas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="calificaciones.html">Consultar Calificaciones</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-<!-- Header con imagen -->
-<header class="header-mini-image text-black">
-    <h1>Prácticas de Laboratorio de Propedéutica</h1>
-</header>
-
-    <!-- Instrucciones de uso -->
-    <div class="container">
-        <div class="card shadow mt-5">
-            <div class="card-header text-center bg-primary text-white fw-bold">
-                Procedimientos de Enfermería
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item"><span class="fw-bold">1.</span> Lavado de manos.</li>
-                <li class="list-group-item list-group-item-secondary"><span class="fw-bold">2.</span> Preparación de material y equipo.</li>
-                <li class="list-group-item"><span class="fw-bold">3.</span> Calzado de guantes.</li>
-                <li class="list-group-item list-group-item-secondary"><span class="fw-bold">4.</span> Arreglo de cama.</li>
-                <li class="list-group-item"><span class="fw-bold">5.</span> Arreglo de cama: Anestesia.</li>
-                <li class="list-group-item list-group-item-secondary"><span class="fw-bold">6.</span> Posiciones del paciente.</li>
-                <li class="list-group-item"><span class="fw-bold">7.</span> Medición de signos vitales.</li>
-                <li class="list-group-item list-group-item-secondary"><span class="fw-bold">8.</span> Somatometría.</li>
-                <li class="list-group-item"><span class="fw-bold">9.</span> Aplicación de vendajes.</li>
-                <li class="list-group-item list-group-item-secondary"><span class="fw-bold">10.</span> Movilización/Traslado al paciente.</li>
-                <li class="list-group-item"><span class="fw-bold">11.</span> Oxigenoterapia.</li>
-                <li class="list-group-item list-group-item-secondary"><span class="fw-bold">12.</span> Instalación de sonda nasogástrica.</li>
-                <li class="list-group-item"><span class="fw-bold">13.</span> Medición de glucometría.</li>
-                <li class="list-group-item list-group-item-secondary"><span class="fw-bold">14.</span> Administración de enema.</li>
-                <li class="list-group-item"><span class="fw-bold">15.</span> Aseo de genitales.</li>
-                <li class="list-group-item list-group-item-secondary"><span class="fw-bold">16.</span> Instalación de cateterismo vesical.</li>
-                <li class="list-group-item"><span class="fw-bold">17.</span> Aseo del paciente (cavidades).</li>
-                <li class="list-group-item list-group-item-secondary"><span class="fw-bold">18.</span> Administración de medicamento: VO.</li>
-                <li class="list-group-item"><span class="fw-bold">19.</span> Administración de medicamento: Nasal, oftálmica, ótica.</li>
-                <li class="list-group-item list-group-item-secondary"><span class="fw-bold">20.</span> Administración de medicamento: vía ID.</li>
-                <li class="list-group-item"><span class="fw-bold">21.</span> Administración de medicamento: vía SC.</li>
-                <li class="list-group-item list-group-item-secondary"><span class="fw-bold">22.</span> Administración de medicamento: vía I.M.</li>
-                <li class="list-group-item"><span class="fw-bold">23.</span> Administración de medicamento: vía I.V.</li>
-                <li class="list-group-item list-group-item-secondary"><span class="fw-bold">24.</span> Instalación de venoclisis.</li>
-                <li class="list-group-item"><span class="fw-bold">25.</span> Aspiración de secreciones.</li>
-                <li class="list-group-item list-group-item-secondary"><span class="fw-bold">26.</span> Baño de esponja.</li>
-                <li class="list-group-item"><span class="fw-bold">27.</span> Técnica para amortajamiento.</li>
-                <li class="list-group-item list-group-item-secondary"><span class="fw-bold">28.</span> Curación UPP (úlcera por presión).</li>
-                <li class="list-group-item"><span class="fw-bold">29.</span> Aplicación de nebulizaciones.</li>
+<!-- Barra de navegación corregida -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fw-bold">
+    <div class="container-fluid d-flex justify-content-center align-items-center">
+        <a class="navbar-brand" href="#">Prototipo de Evaluación</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="alumno.html">Alumno</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="docentes.html">Docente</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="practicas.html">Prácticas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gestion_practicas.html">Gestión de Prácticas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="calificaciones.html">Consultar Calificaciones</a>
+                </li>
             </ul>
         </div>
     </div>
+</nav>
 
-    <div class="pt-5"></div>
+<!-- Header con imagen -->
+<header class="header-mini-image text-black text-center py-5 bg-light">
+    <h1>Prácticas de Laboratorio de Propedéutica</h1>
+</header>
 
+<!-- Instrucciones con listas ordenadas -->
+<div class="container my-5">
+    <div class="accordion" id="accordionProcedimientos">
 
-    <!-- Footer -->
-    <footer class="bg-light text-center text-black fw-bold py-4">
-        <p>© 2025 Prototipo Evaluación Clínica</p>
-    </footer>
+        <!-- Lavado de manos -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading1">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                    1. Lavado de manos
+                </button>
+            </h2>
+            <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#accordionProcedimientos">
+                <div class="accordion-body">
+                    <ol>
+                        <li>Mójese las manos con agua y jabón suficiente.</li>
+                        <li>Frótese las palmas entre sí con movimientos circulares.</li>
+                        <li>Frótese la palma derecha contra el dorso izquierdo entrelazando dedos, y viceversa.</li>
+                        <li>Frótese las palmas con dedos entrelazados.</li>
+                        <li>Frótese el dorso de los dedos contra las palmas opuestas con dedos entrelazados.</li>
+                        <li>Frótese con rotación el pulgar izquierdo y viceversa.</li>
+                        <li>Frótese las puntas de los dedos contra la palma contraria.</li>
+                        <li>Enjuáguese con agua corriente.</li>
+                        <li>Séquese bien con toalla desechable.</li>
+                        <li>Cierre la llave del grifo usando la toalla.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
 
-    <!-- Scripts de Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Calzado de guantes -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                    2. Calzado de guantes
+                </button>
+            </h2>
+            <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionProcedimientos">
+                <div class="accordion-body">
+                    <ol>
+                        <li>Realiza higiene adecuada de manos.</li>
+                        <li>Coloca el paquete sobre superficie limpia y seca, ábrelo cuidadosamente.</li>
+                        <li>Identifica guante derecho e izquierdo.</li>
+                        <li>Coloca el guante de la mano dominante tocando solo superficie interna.</li>
+                        <li>Coloca el segundo guante usando la mano ya enguantada.</li>
+                        <li>Ajusta ambos guantes sin contaminar.</li>
+                        <li>Verifica que no haya roturas.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Medición de glucometría -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                    3. Medición de glucometría
+                </button>
+            </h2>
+            <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionProcedimientos">
+                <div class="accordion-body">
+                    <ol>
+                        <li>Explica al paciente el procedimiento.</li>
+                        <li>Lávate manos y usa guantes.</li>
+                        <li>Prepara y verifica glucómetro.</li>
+                        <li>Elige sitio lateral del dedo y limpia con alcohol.</li>
+                        <li>Realiza la punción y obtén la muestra.</li>
+                        <li>Acerca tira reactiva a la sangre para lectura.</li>
+                        <li>Anota el valor obtenido.</li>
+                        <li>Aplica presión al sitio hasta detener sangrado.</li>
+                        <li>Desecha correctamente materiales y guantes, lava nuevamente las manos.</li>
+                        <li>Informa al paciente y registra resultados.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer class="bg-light text-center text-black fw-bold py-4">
+    <p>© 2025 Prototipo Evaluación Clínica</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
